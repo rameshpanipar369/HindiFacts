@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/appColor">
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/_22ssp"
+            android:layout_height="@dimen/_22ssp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10ssp"
+            android:padding="@dimen/_4ssp"
+            android:visibility="gone"
+            android:src="@drawable/ic_back" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Amazing Facts In Hindi"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp" />
+
+        <ImageView
+            android:id="@+id/ivNotification"
+            android:layout_width="@dimen/_22ssp"
+            android:layout_height="@dimen/_22ssp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_15ssp"
+            android:background="@drawable/white_border_round"
+            android:padding="@dimen/_4ssp"
+            android:src="@drawable/ic_notification" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
